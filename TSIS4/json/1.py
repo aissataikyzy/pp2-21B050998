@@ -5,7 +5,7 @@ print("-------------------------------------------------- --------------------  
  
 import json 
  
-f = open('sample.txt','r') 
+f = open('/Users/User/Documents/pp2/.vs/pp2/TSIS4/json/sample.txt','r') 
 text = f.read() 
 teacher = json.loads(text) 
 ostin = teacher['imdata'] 
