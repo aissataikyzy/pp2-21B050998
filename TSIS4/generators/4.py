@@ -10,3 +10,7 @@ for num in squares():
     if num in range(a, b):
         print(num)
      
+    
+n=int(input())
+a=range(n)
+print(list(a)[::-1])
