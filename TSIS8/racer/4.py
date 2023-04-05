@@ -74,7 +74,7 @@ background = pygame.image.load('AnimatedStreet.png')
 
 
 
-
+pygame.mixer.Sound('week10_materials_background.wav').play(-1)
 class Enemy(pygame.sprite.Sprite):
 
     def __init__(self):
@@ -235,7 +235,7 @@ while True:
 
         entity.move()
 
-    #pygame.mixer.Sound('week10_materials_background.wav').play()
+    #
 
     #in this part we increase score if player collide with coin and generate new coin after that
 
@@ -263,7 +263,7 @@ while True:
 
     if pygame.sprite.spritecollideany(p1, enemies):
 
-        pygame.mixer.Sound('week10_materials_crash.wav').play()
+        pygame.mixer.Sound('week10_materials_crash.wav').play(1)
 
         time.sleep(0.5)
 
